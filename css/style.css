@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: #8b8b8b;
+  background: #ca1b23;
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
@@ -296,19 +296,22 @@ h1, h2, h3, h4, h5, h6 {
   color: #ca1b23;
 }
 
-.nav-menu .get-started a {
+ .get-started a {
   background: #ca1b23;
   color: #fff;
   border-radius: 50px;
   margin: -10px 15px;
   padding: 10px 25px;
+  border: 1px solid #ca1b23;
+  
 }
 
-.nav-menu .get-started a:hover {
-  background: #8b8b8b;
-  color: #fff;
-  border: none;
+ .get-started a:hover {
+   border: 1px solid #ca1b23;
+  color: #ca1b23;
+  background:none;
 }
+
 
 .nav-menu   > ul > li.get-started > a:before{
 background: none;
@@ -402,7 +405,7 @@ background: none;
   position: relative;
   color: #222222;
   padding: 10px 20px;
-  font-weight: 500;
+  font-weight: 600;
   outline: none;
 }
 
@@ -462,6 +465,16 @@ background: none;
   color: #fff;
 }
 
+@media (max-width: 768px) {
+	 .get-started a {  
+        margin: 0px 15px; 
+		color:#fff;
+      }
+	
+}
+
+
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -469,9 +482,9 @@ background: none;
 
 #herobanner {
   margin: 0; 
-  margin-top: 80px;
+  margin-top: 90px;
   position: relative;
-  background: #fdf4f4;
+  background: #fbfbfb;
   padding: 50px 0px;
   
   
@@ -547,6 +560,9 @@ background: none;
 .carousel-caption h1 span{  font-size: 32px;}
 .carousel-caption p{ display: none;}
 
+.inner-cricle{ position: absolute; top: 0px; right: -90px;}
+.inner-cricle2{ display:none;}
+
 }
 
 
@@ -559,7 +575,7 @@ section {
 }
 
 .section-bg {
-  background-color: #fdf4f4;
+  background-color: #fbfbfb;
 }
 
 .section-title {
